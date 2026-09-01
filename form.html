@@ -1,0 +1,243 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>babyclothingshop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+< class="form">
+    
+<header>
+  <div>
+    <button class="top">ثبت سفارش</button>
+  </div>
+
+  <div class="list">
+    <ul id="navMenu">
+      <a href="/index.html"><li>صفحه اصلی</li></a>
+      <a href="/mahsoolat.html"><li>محصولات</li></a>
+      <a href="./sayzbandy.html"><li>راهنمای سایزبندی</li></a>
+      <a href="./ertebatbama.html"><li>ارتباط با ما</li></a>
+    </ul>
+  </div>
+</header>
+<pre>
+
+
+
+
+
+</pre>
+
+<div class="form-wrapper">
+    <div class="form-container">
+        <div class="form-header">
+            <span class="icon">👶</span>
+            <h1 class="form-title">ثبت سفارش پوشاک بیبی کلوزینگ شاپ</h1>
+            <p class="form-subtitle">  لباس‌های باکیفیت برای فرشته‌های کوچولو شما</p>
+        </div>
+
+        <form action="#" method="POST" enctype="multipart/form-data">
+
+            <div class="row-2">
+                <div class="form-group">
+                    <label>نام پدر/مادر <span class="star">*</span></label>
+                    <input type="text" name="parent_name" placeholder="مثال:هانیه رسولی" required>
+                </div>
+                <div class="form-group">
+                    <label>شماره تماس <span class="star">*</span></label>
+                    <input type="tel" name="phone" placeholder="09123456789" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>ایمیل</label>
+                <input type="email" name="email" placeholder="example@email.com">
+            </div>
+
+            <div class="form-group">
+                <label>آدرس کامل <span class="star">*</span></label>
+                <input type="text" name="address" placeholder="استان، شهر، خیابان، پلاک" required>
+            </div>
+
+            <div class="row-2">
+                <div class="form-group">
+                    <label>نام کودک <span class="star">*</span></label>
+                    <input type="text" name="child_name" placeholder="نام فرزند دلبندتان" required>
+                </div>
+                <div class="form-group age-box">
+                    <label>سن کودک <span class="star">*</span></label>
+                    <select name="age" required>
+                        <option value="">انتخاب کنید...</option>
+                        <option value="0-6">0 تا 6 ماه</option>
+                        <option value="6-12">6 تا 12 ماه</option>
+                        <option value="1-2">1 تا 2 سال</option>
+                        <option value="2-3">2 تا 3 سال</option>
+                        <option value="3-4">3 تا 4 سال</option>
+                        <option value="4-5">4 تا 5 سال</option>
+                        <option value="5-6">5 تا 6 سال</option>
+                        <option value="6-7">6 تا 8 سال</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- ===== اصلاح شده: جنسیت کودک ===== -->
+            <div class="form-group">
+                <label>جنسیت کودک <span class="star">*</span></label>
+                <div class="inline-group">
+                    <label>
+                        <input type="radio" name="child_gender" value="پسر" checked>
+                        👦 پسر
+                    </label>
+                    <label>
+                        <input type="radio" name="child_gender" value="دختر">
+                        👧 دختر
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>نوع لباس <span class="star">*</span></label>
+                <select name="product" required>
+                    <option value="">انتخاب کنید...</option>
+                    <option value="تاپ">ست دخترانه</option>
+                    <option value="شلوار">ست پسرانه</option>
+                    <option value="لباس خواب">کیف</option>
+                    <option value="پیراهن">کفش</option>
+                    <option value="کت و شلوار">عروسک </option>
+                    <option value="لباس مجلسی">جوراب</option>
+                    <option value="ست کامل">ست کامل</option>
+                    <option value="سایر">سایر</option>
+                </select>
+            </div>
+
+            <div class="row-2">
+                <div class="form-group">
+                    <label>سایز <span class="star">*</span></label>
+                    <select name="size" required>
+                        <option value="">انتخاب کنید...</option>
+                        <option value="56">30 </option>
+                        <option value="62">35 </option>
+                        <option value="68">40 </option>
+                        <option value="74">45</option>
+                        <option value="80">50</option>
+                        <option value="86">55</option>
+                        <option value="92">60</option>
+                        <option value="98">65</option>
+                        <option value="104">70</option>
+                        <option value="110">75</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>تعداد <span class="star">*</span></label>
+                    <input type="number" name="quantity" min="1" max="20" value="1" required>
+                </div>
+            </div>
+
+            <!-- ===== اصلاح شده: رنگ ===== -->
+            <div class="form-group">
+                <label>رنگ دلخواه</label>
+                <div class="inline-group">
+                    <label class="color-red">
+                        <input type="radio" name="color" value="قرمز">
+                        🔴 قرمز
+                    </label>
+                    <label class="color-blue">
+                        <input type="radio" name="color" value="آبی" checked>
+                        🔵 آبی
+                    </label>
+                    <label class="color-yellow">
+                        <input type="radio" name="color" value="زرد">
+                        🟡 زرد
+                    </label>
+                    <label class="color-purple">
+                        <input type="radio" name="color" value="بنفش">
+                        🟣 بنفش
+                    </label>
+                    <label class="color-green">
+                        <input type="radio" name="color" value="سبز">
+                        🟢 سبز
+                    </label>
+                    <label class="color-pink">
+                        <input type="radio" name="color" value="صورتی">
+                        💗 صورتی
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>تاریخ تحویل <span class="star">*</span></label>
+                <input type="date" name="delivery_date" required>
+            </div>
+
+            <div class="form-group">
+                <label>روش ارسال</label>
+                <div class="inline-group">
+                    <label>
+                        <input type="checkbox" name="shipping" value="عادی" checked>
+                        📦 عادی (۳-۵ روز)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="shipping" value="فوری">
+                        🚀 فوری (۲۴ ساعته)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="shipping" value="حضوری">
+                        🏪 تحویل حضوری
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="inline-group">
+                    <label style="border-color: #fd79a8; background: #fff5f7;">
+                        <input type="checkbox" name="gift_wrap" value="بله">
+                        🎁 بسته‌بندی کادویی (رایگان)
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>آپلود تصویر (اختیاری)</label>
+                <input type="file" name="file" accept=".jpg,.jpeg,.png">
+                <div class="hint">📎 میتونید عکس سایز یا مدل مورد نظر رو آپلود کنید</div>
+            </div>
+
+            <div class="form-group">
+                <label>توضیحات تکمیلی</label>
+                <textarea name="description" placeholder="هر نکته خاصی دارید اینجا بنویسید... مثلاً حساسیت پوستی، سایز خاص و..."></textarea>
+            </div>
+
+            <button type="submit" class="btn">🎀 ثبت سفارش</button>
+        </form>
+    </div>
+</div>
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>بیبی کلوزینگ شاپ</h3>
+      <p>ما متعهد به ارائه بهترین خدمات با کیفیت بالا هستیم.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>لینک‌ها</h4>
+      <a href="index.html">صفحه اصلی</a>
+      <a href="mahsoolat.html">محصولات</a>
+      <a href="sayzbandy.html">راهنمای سایزبندی</a>
+      <a href="ertebatbama.html">ارتباط با ما</a>
+    </div>
+
+    <div class="footer-section">
+      <h4>تماس</h4>
+      <p>📞 ۰۲۱-۱۲۳۴۵۶۷۸</p>
+      <p>✉️ info@babyclothingshop.com</p>
+      <p>📍 تهران</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>با ارزوی بهترین ها برای شما</p>
+  </div>
+</footer>
+</body>
+</html>
